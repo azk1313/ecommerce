@@ -31,7 +31,8 @@ export class BasketService {
       next: basket => {
         this.basketSource.next(basket);
         this.calculateTotals();
-      }
+      },
+      complete: () => console.log("pehla ho gua")
     })
   }
 
